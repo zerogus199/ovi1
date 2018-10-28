@@ -1,0 +1,262 @@
+<!doctype html>
+<html>
+<head>
+
+
+<div id="sfc47azdscbqtkk9q6qsyyj8ua1np4y2jy7"></div>
+<script type="text/javascript" src="https://counter5.wheredoyoucomefrom.ovh/private/counter.js?c=47azdscbqtkk9q6qsyyj8ua1np4y2jy7&down=async" async></script>
+<noscript><a href="https://www.contadorvisitasgratis.com" title="contador de visitas online"><img src="https://counter5.wheredoyoucomefrom.ovh/private/contadorvisitasgratis.php?c=47azdscbqtkk9q6qsyyj8ua1np4y2jy7" border="0" title="contador de visitas online" alt="contador de visitas online"></a></noscript>
+
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inicio | administracion de bases de datos</title>
+<link href="BlogPostAssets/styles/blogPostStyle.css" rel="stylesheet" type="text/css">
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.--><script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/montserrat:n4:default;source-sans-pro:n2:default.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="mainwrapper">
+  <div id="content">
+    <section id="mainContent">
+      <div id="mainwrapper2">
+        <header>
+          <!--**************************************************************************
+    Header starts here. It contains Logo and 3 navigation links. 
+    ****************************************************************************-->
+          <div id="logo">
+            <!-- <img src="logoImage.png" alt="sample logo"> -->
+            <!-- Company Logo text -->
+            <a href="lecturas.html"><img src="images/logo.png" width="350" height="" alt=""/></a></div>
+          <nav> <a href="index.html" title="Inicio">Inicio</a> <a href="lecturas.html" title="Lecturas">Lecturas </a><a href="multimedia.html" title="Multimedia">Multimedia</a><a href="actividades.html" title="Link">Actividades</a><a href="autores.html" title="Link">Autores</a><a href="conctacto.html" title="Link">Contáctanos</a></nav>
+        </header>
+        <div id="content2">
+          <div class="notOnDesktop">
+            <!-- This search box is displayed only in mobile and tablet laouts and not in desktop layouts -->
+            <input type="text" placeholder="Search">
+          </div>
+          <section id="mainContent2">
+            <p>&nbsp;</p>
+            <p><cite><font size="+3"><img src="images/home_lecturas copia.png" width="100%" height="" alt=""/></font></cite></p>
+            <div id="bannerImage"></div>
+            <h4><strong>Instalación Básica</strong></h4>
+            <p>MySQL posee  varias versiones 3, 4 y 5 siendo la 3 la más estable y la 5 la más experimental.<br>
+              Los cambios en la versión 4 permiten tener mayor funcionalidad, teniendo por  ejemplo quieres anidados y búsquedas a texto completo.<br>
+              MySQL posee 4  tipos de tablas (y en consecuencia de índices):</p>
+            <div align="center">
+              <table border="1" cellspacing="0" cellpadding="0" width="30%">
+                <tr>
+                  <td><br>
+                    Índice </td>
+                  <td><p>Versión</p></td>
+                </tr>
+                <tr>
+                  <td><p>MyISAM</p></td>
+                  <td><p>Estándar,    Max</p></td>
+                </tr>
+                <tr>
+                  <td><p>Montón</p></td>
+                  <td><p>Estándar, Max</p></td>
+                </tr>
+                <tr>
+                  <td><p>BerkeleyDB</p></td>
+                  <td><p>Max</p></td>
+                </tr>
+                <tr>
+                  <td><p>Innodb</p></td>
+                  <td><p>Max</p></td>
+                </tr>
+              </table>
+            </div>
+            <p align="center">Tabla 3.1 Indexamiento en MySQL<br>
+  &nbsp;MyISAM  se basa en un indexamiento por bloques, Heap es una tabla que existe solo en  memoria, mientras que BDB e InnoDB utilizan B-Trees.<br>
+              Se puede observar que existen 2 variantes del software, la Standard y la Max;  la diferencia radica en el soporte de transacciones que es posible en la  versión Max gracias a los módulos de Berkeley DB e InnoDB incorporados en ella.<br>
+              Es importante resaltar que aunque esta funcionalidad está disponible no es la  configuración por default, salvo que se indique lo contrario, siempre tipo de  indexamiento por defecto será MyISAM.<br>
+              El equipo MySQL recomienda bajar los binarios compilados por ellos para evitar  cualquier tipo de problema, de manera que en la sección de &quot;Database  Server&quot; se puede bajar el binario de la versión deseada.<br>
+              Una vez descargado el software se procede a desempaquetarlo (.tgz, zip) o bien  ejecutar el .exe correspondiente.<br>
+              Dichos directorios contenidos en un directorio que por lo general lleva el  mismo nombre 'mysql' contiene una estructura de la siguiente manera:</p>
+            <ul>
+              <li>bin:  programas ejecutables, mysql, mysqld, mysqldump, myisamchk, mysqlbinlog.</li>
+              <li>include,  lib, libexec: librerías y encabezados para programar en C/C++</li>
+              <li>mysql-test,  sql-bench: pruebas y benchmarks</li>
+              <li>var  ó data: estructura de todas las bases y datos de las tablas tipo MyISAM y  Berkeley DB.</li>
+              <li>man:  páginas de manual</li>
+              <li>share:  información en distintos idiomas</li>
+              <li>support-files:  archivos de configuración y scripts de arranque automático</li>
+            </ul>
+            <p>Antes de poder  ejecutar el demonio (o guardián) del manejador, es conveniente realizar una  configuración, para ello se tiene que editar alguno de los archivos .cnf, los  cuales se encuentran ubicados en el directorio raíz de mysql o bien en el  directorio support-files. El archivo elegido dependera de la configuración de  la máquina (small, medium, large, huge), cada archivo provee información acerca  de la memoria apropiada para cada configuración. La tabla 3.2 muestra un  ejemplo de configuración para una arquitectura media.<br>
+              Parte de la  tarea de configuración es habilitar el soporte de InnoDB, configurando cada una  de las variables de acuerdo a lo propuesto en 3.2, desde luego los aspectos más  importantes serán los buffers</p>
+            <div align="center">
+              <table border="1" cellspacing="0" cellpadding="0" width="65%">
+                <tr>
+                  <td><pre># Ejemplo de archivo de configuración de mysql para sistemas medianos.</pre>
+                    <pre>#</pre>
+                    <pre># Esto es para un sistema con poca memoria (32M - 64M) donde se reproduce MySQL</pre>
+                    <pre># una parte importante y sistemas de hasta 128M, muy MySQL se usa junto con</pre>
+                    <pre># otros programas (como un servidor web)</pre>
+                    <pre>#</pre>
+                    <pre># Puedes copiar este archivo a</pre>
+                    <pre># /etc/mf.cnf para establecer opciones globales,</pre>
+                    <pre># mysql-data-dir / my.cnf para configurar las opciones específicas del servidor (en este</pre>
+                    <pre># instalación este directorio es / centia01 / develop / database / mysql / var) o</pre>
+                    <pre># ~ / .my.cnf para configurar las opciones específicas del usuario.</pre>
+                    <pre>#</pre>
+                    <pre># Uno puede en este archivo usar todas las opciones largas que admite el programa.</pre>
+                    <pre># Si desea saber qué opciones admite un programa, ejecute el programa.</pre>
+                    <pre># con la opción de ayuda.</pre>
+                    <pre># Las siguientes opciones serán pasadas a todos los clientes MySQL</pre>
+                    <pre>[cliente]</pre>
+                    <pre> # contraseña = tu_ contraseña</pre>
+                    <pre>puerto = 3306</pre>
+                    <pre>socket = /tmp/mysql.sock</pre>
+                    <pre># Aquí sigue las entradas para algunos programas específicos.</pre>
+                    <pre># El servidor MySQL</pre>
+                    <pre>[mysqld]</pre>
+                    <pre>puerto = 3306</pre>
+                    <pre>socket = /tmp/mysql.sock</pre>
+                    <pre>bloqueo de salto</pre>
+                    <pre>set-variable = key_buffer = 64M</pre>
+                    <pre>set-variable = max_allowed_packet = 256M</pre>
+                    <pre>set-variable = table_cache = 64</pre>
+                    <pre>set-variable = sort_buffer = 512K</pre>
+                    <pre>set-variable = net_buffer_length = 8K</pre>
+                    <pre>set-variable = myisam_sort_buffer_size = 16M</pre>
+                    <pre>set-variable = max_connections = 500</pre>
+                    <pre>set-variable = interactive_timeout = 604800</pre>
+                    <pre>set-variable = wait_timeout = 604800</pre>
+                    <pre>bandeja de registro</pre>
+                    <pre>ID del servidor = 1</pre>
+                    <pre>set-variable = default_table_type = innodb</pre>
+                    <pre># Señalar las siguientes rutas a diferentes discos dedicados</pre>
+                    <pre>tmpdir = / var / tmp / </pre>
+                    <pre># log-update = / mysql / var / log-catarina</pre>
+                    <pre># Descomente lo siguiente si está utilizando tablas BDB</pre>
+                    <pre>set-variable = bdb_cache_size = 4M</pre>
+                    <pre>set-variable = bdb_max_lock = 10000</pre>
+                    <pre># Descomente lo siguiente si está utilizando tablas de Innobase</pre>
+                    <pre>innodb_data_file_path = ibdata1: 30G: autoextend</pre>
+                    <pre>innodb_data_home_dir = / mysql / innodb</pre>
+                    <pre>innodb_log_group_home_dir = / mysql / innodb</pre>
+                    <pre>innodb_log_arch_dir = / mysql / innodb</pre>
+                    <pre>set-variable = innodb_mirrored_log_groups = 1</pre>
+                    <pre>set-variable = innodb_log_files_in_group = 3</pre>
+                    <pre>set-variable = innodb_log_file_size = 5M</pre>
+                    <pre>set-variable = innodb_log_buffer_size = 16M</pre>
+                    <pre>innodb_flush_log_at_trx_commit = 1</pre>
+                    <pre>innodb_log_archive = 0</pre>
+                    <pre>set-variable = innodb_buffer_pool_size = 256M</pre>
+                    <pre>set-variable = innodb_additional_mem_pool_size = 256M</pre>
+                    <pre>set-variable = innodb_file_io_threads = 4</pre>
+                    <pre>set-variable = innodb_lock_wait_timeout = 50</pre>
+                    <pre># set-variable = innodb_force_recovery = 3</pre>
+                    <pre>[mysqldump]</pre>
+                    <pre>rápido</pre>
+                    <pre>set-variable = max_allowed_packet = 256M</pre>
+                    <pre>[mysql]</pre>
+                    <pre>prompt = (\ u) [\ d]&gt; \ _</pre>
+                    <pre>no-auto-rehash</pre>
+                    <pre># Eliminar el siguiente carácter de comentario si no está familiarizado con SQL</pre>
+                    <pre># actualizaciones seguras</pre>
+                    <pre>[isamchk]</pre>
+                    <pre>set-variable = key_buffer = 20M</pre>
+                    <pre>set-variable = sort_buffer = 20M</pre>
+                    <pre>set-variable = read_buffer = 2M</pre>
+                    <pre>set-variable = write_buffer = 2M</pre>
+                    <pre>[myisamchk]</pre>
+                    <pre>set-variable = key_buffer = 20M</pre>
+                    <pre>set-variable = sort_buffer = 20M</pre>
+                    <pre>set-variable = read_buffer = 2M</pre>
+                    <pre>set-variable = write_buffer = 2M</pre>
+                    <pre>[mysqlhotcopy]</pre>
+                    <pre>tiempo de espera interactivo</pre></td>
+                </tr>
+              </table>
+            </div>
+            <p align="center">Tabla 3.2 Archivo de Configuración my.cnf,  my.ini</p>
+<h1>&nbsp;</h1>
+            <h1><br>
+          </h1>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <aside id="authorInfo">
+              <!-- The author information is contained here -->
+              <h2>Audio de bienvenida !</h2>
+              <!-- incluir el audio soundcould-->
+              <p>
+                <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/520230135&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                <!-- fin audio soundcould-->
+              </p>
+              <!--comentarios facebook star-->
+              <div id="fb-root"></div>
+              <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v3.2';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+              <div class="fb-comments" data-href="https://zerogus199.github.io/OVI/" data-width="700" data-numposts="5"></div>
+              <!-- fin comentarios-->
+            </aside>
+          </section>
+          <section id="sidebar">
+            <!--************************************************************************
+    Sidebar starts here. It contains a searchbox, sample ad image and 6 links
+    ****************************************************************************-->
+            <input type="text" placeholder="Buscar Video">
+            <div id="adimage">
+              <iframe width="250" height="" src="https://www.youtube.com/embed/4vFR1AhJ7WY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <nav>
+              <ul>
+                <li><a href="act1.html" title="Actividad 1">Actividad 1</a></li>
+                <li><a href="act2.html" title="Actividad 2">Actividad 2</a></li>
+                <li><a href="act3.html" title="Actividad 3">Actividad 3</a></li>
+                <li><a href="act4.html" title="Actividad 4">Actividad 4</a></li>
+                <li><a href="act5.html" title="Actividad 5">Actividad 5</a></li>
+                <li><a href="act6.html" title="Actividad 6">Actividad 6</a></li>
+              </ul>
+            </nav>
+          </section>
+          <footer>
+            <!--************************************************************************
+    Footer starts here
+    ****************************************************************************-->
+            <article>
+              <table width="100%" border="0" cellspacing="40px" cellpadding="0">
+                <tr>
+                  <th scope="col"><img src="images/1.jpg" alt="" width="200"></th>
+                  <th scope="col"><img src="images/2.jpg" alt="" width="200"></th>
+                  <th scope="col"><img src="images/3.jpg" alt="" width="200"></th>
+                </tr>
+              </table>
+              <h3>&nbsp;</h3>
+              <p>.</p>
+            </article>
+            <article>
+              <h3>&nbsp;</h3>
+              <p></p>
+            </article>
+          </footer>
+        </div>
+        <div id="footerbar">
+          <!-- Small footerbar at the bottom -->
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+</body>
+</html>

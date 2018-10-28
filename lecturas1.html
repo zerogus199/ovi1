@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+
+
+<div id="sfc47azdscbqtkk9q6qsyyj8ua1np4y2jy7"></div>
+<script type="text/javascript" src="https://counter5.wheredoyoucomefrom.ovh/private/counter.js?c=47azdscbqtkk9q6qsyyj8ua1np4y2jy7&down=async" async></script>
+<noscript><a href="https://www.contadorvisitasgratis.com" title="contador de visitas online"><img src="https://counter5.wheredoyoucomefrom.ovh/private/contadorvisitasgratis.php?c=47azdscbqtkk9q6qsyyj8ua1np4y2jy7" border="0" title="contador de visitas online" alt="contador de visitas online"></a></noscript>
+
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inicio | administracion de bases de datos</title>
+<link href="BlogPostAssets/styles/blogPostStyle.css" rel="stylesheet" type="text/css">
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.--><script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/montserrat:n4:default;source-sans-pro:n2:default.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="mainwrapper">
+  <div id="content">
+    <section id="mainContent">
+      <div id="mainwrapper2">
+        <header>
+          <!--**************************************************************************
+    Header starts here. It contains Logo and 3 navigation links. 
+    ****************************************************************************-->
+          <div id="logo">
+            <!-- <img src="logoImage.png" alt="sample logo"> -->
+            <!-- Company Logo text -->
+            <a href="#"><img src="images/logo.png" width="350" height="" alt=""/></a></div>
+          <nav> <a href="index.html" title="Inicio">Inicio</a> <a href="lecturas.html" title="Lecturas">Lecturas </a><a href="multimedia.html" title="Multimedia">Multimedia</a><a href="actividades.html" title="Link">Actividades</a><a href="autores.html" title="Link">Autores</a><a href="conctacto.html" title="Link">Contáctanos</a></nav>
+        </header>
+        <div id="content2">
+          <div class="notOnDesktop">
+            <!-- This search box is displayed only in mobile and tablet laouts and not in desktop layouts -->
+            <input type="text" placeholder="Search">
+          </div>
+          <section id="mainContent2">
+            <p>&nbsp;</p>
+            <p><cite><font size="+3"><img src="images/home_lecturas copia.png" width="100%" height="" alt=""/></font></cite></p>
+            <div id="bannerImage"></div>
+            <h1><strong><font color="#1A1818" size="+4">Arquitectura de un manejador de bases de datos (DBMS)</font></strong></h1>
+            <h1>&nbsp;</h1>
+            <p>Una base de datos en ejecución consta  de 3 cosas: </p>
+            <p>Archivos</p>
+            <p>-Control (ctl): almacenan información acerca de la estructura de archivos de la base.<br>
+              -Rollback (rbs): cuando se modifica el valor de alguna tupla en una transacción, los valores nuevos y anteriores se almacenan en un archivo, de modo que si ocurre algún error, se puede regresar (rollback) a un estado anterior.<br>
+              -Redo (rdo): bitácora de toda transacción, en muchos dbms incluye todo tipo de consulta incluyendo aquellas que no modifican los datos.<br>
+              -Datos (dbf): el tipo más común, almacena la información que es accesada en la base de datos.<br>
+              -Indices (dbf) (dbi): archivos hermanos de los datos para acceso rápido.<br>
+            -Temp (tmp): localidades en disco dedicadas a operaciones de ordenamiento o alguna actividad particular que requiera espacio temporal adicional.</p>
+            <p>Memoria</p>
+            <p>&nbsp;</p>
+            <p>-Shared Global Area (SGA): es el área más grande de memoria y quizás el más importante.<br>
+              -Shared Pool: es una caché que mejora el rendimiento ya que almacena parte del diccionario de datos y el parsing de algunas consultas en SQL.<br>
+              -Redo Log Buffer: contiene un registro de todas las transacciones dentro de la base, las cuales se almacenan en el respectivo archivo de Redo y en caso de siniestro se vuelven a ejecutar aquellos cambios que aún no se hayan reflejado en el archivo de datos (commit).<br>
+              -Large Pool: espacio adicional, generalmente usado en casos de multithreading y esclavos de I/O.<br>
+              -Java Pool: usado principalmente para almacenar objetos Java.<br>
+              -Program Global Area (PGA): información del estado de cursores/apuntadores.<br>
+              -User Global Area(UGA): información de sesión, espacio de stack</p>
+            <p>Procesos</p>
+            <p>&nbsp;</p>
+            <p>-Threading<br>
+              -System Monitor: despierta periódicamente y realiza algunas actividades entre las que se encuentran la recuperación de errores, recuperación de espacio libre en tablespaces y en segmentos temporales.<br>
+              -Process Monitor: limpia aquellos procesos que el usuario termina de manera anormal, verificando consistencias, liberación de recursos, bloqueos.<br>
+              -Database Writer: escribe bloques de datos modificados del buffer al disco, aquellas transacciones que llegan a un estado de commit.<br>
+              -Log Writer: escribe todo lo que se encuentra en el redo log buffer hacia el redo file.<br>
+              -Checkpoint: sincroniza todo lo que se tenga en memoria, con sus correspondientes archivos en disco</p>
+            <p>&nbsp;</p>
+            <p>Instancia de una bd en Oracle</p>
+            <p>&nbsp;</p>
+            <p><img src="images/unt.jpg" width="436" height="336"></p>
+            <p><font color="#111010"><strong>Rotación de segmentos de rollback</strong></font>            </p>
+            <p>&nbsp;</p>
+            <p><img src="images/untitled.jpg" width="436" height="294"></p>
+            <p><strong>Rotación de bitácoras de Redo</strong></p>
+            <p>&nbsp;</p>
+            <p><img src="images/untitled1.jpg" width="436" height="294"></p>
+            <p><strong>Ejemplo del esquema de una base de datos en Oracle</strong></p>
+            <p>&nbsp;</p>
+            <p><img src="images/untitled2.jpg" width="436" height="294"></p>
+            <p>&nbsp;</p>
+            <p>Utilización del Shared Pool</p>
+            <p><img src="images/untitled4.jpg" width="436" height="294"></p>
+            <p>Ejemplo del control de transacción</p>
+            <p><img src="images/untitled6.jpg" width="436" height="294"></p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <aside id="authorInfo">
+              <!-- The author information is contained here -->
+              <h2>Audio de bienvenida !</h2>
+              <!-- incluir el audio soundcould-->
+              <p>
+                <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/520230135&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                <!-- fin audio soundcould-->
+              </p>
+              <!--comentarios facebook star-->
+              <div id="fb-root"></div>
+              <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v3.2';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+              <div class="fb-comments" data-href="https://zerogus199.github.io/OVI/" data-width="700" data-numposts="5"></div>
+              <!-- fin comentarios-->
+            </aside>
+          </section>
+          <section id="sidebar">
+            <!--************************************************************************
+    Sidebar starts here. It contains a searchbox, sample ad image and 6 links
+    ****************************************************************************-->
+            <input type="text" placeholder="Buscar Video">
+            <div id="adimage">
+              <iframe width="250" height="" src="https://www.youtube.com/embed/4vFR1AhJ7WY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <nav>
+              <ul>
+                <li><a href="act1.html" title="Actividad 1">Actividad 1</a></li>
+                <li><a href="act2.html" title="Actividad 2">Actividad 2</a></li>
+                <li><a href="act3.html" title="Actividad 3">Actividad 3</a></li>
+                <li><a href="act4.html" title="Actividad 4">Actividad 4</a></li>
+                <li><a href="act5.html" title="Actividad 5">Actividad 5</a></li>
+                <li><a href="act6.html" title="Actividad 6">Actividad 6</a></li>
+              </ul>
+            </nav>
+          </section>
+          <footer>
+            <!--************************************************************************
+    Footer starts here
+    ****************************************************************************-->
+            <article>
+              <table width="100%" border="0" cellspacing="40px" cellpadding="0">
+                <tr>
+                  <th scope="col"><img src="images/1.jpg" alt="" width="200"></th>
+                  <th scope="col"><img src="images/2.jpg" alt="" width="200"></th>
+                  <th scope="col"><img src="images/3.jpg" alt="" width="200"></th>
+                </tr>
+              </table>
+              <h3>&nbsp;</h3>
+              <p>.</p>
+            </article>
+            <article>
+              <h3>&nbsp;</h3>
+              <p></p>
+            </article>
+          </footer>
+        </div>
+        <div id="footerbar">
+          <!-- Small footerbar at the bottom -->
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+</body>
+</html>
